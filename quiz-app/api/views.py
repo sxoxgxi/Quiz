@@ -2,7 +2,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
 from base import models
-from.serializers import QuestionsSerializer
+from .serializers import QuestionsSerializer
 
 
 @api_view(['GET'])
