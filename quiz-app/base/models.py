@@ -30,6 +30,9 @@ class Questions(BaseModel):
     def __str__(self) -> str:
         return self.question
 
+    def get_answer(self):
+        return Answers.objects.filter(question = self)
+
 
 class Answers(BaseModel):
     question = models.ForeignKey(
